@@ -8,3 +8,9 @@ tostadas
 mermelada
 queso
 
+agregar a la lista:
+fideos
+arroz
+porotos
+choclo
+
