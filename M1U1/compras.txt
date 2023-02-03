@@ -8,8 +8,3 @@ tostadas
 mermelada
 queso
 
-Frutas:
-Peras
-Manzanas
-Uvas
-Bananas
