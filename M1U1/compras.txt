@@ -1,0 +1,15 @@
+Artículos a comprar
+
+Para desayuno:
+Azucar
+Café
+Leche
+tostadas
+mermelada
+queso
+
+Frutas:
+Peras
+Manzanas
+Uvas
+Bananas
