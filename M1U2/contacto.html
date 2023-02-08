@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de Contacto</title>
+</head>
+<body>
+	<a href="index.html">Volver al Cv</a>
+	<p>Para contactarme, completar el siguiente formulario</p>
+	<form action="" method="">
+		<p>
+			</form><input type="text" name="nombre" placeholder="Nombre" />
+			<input type="text" name="apellido" placeholder="Apellido" />
+		</p>
+		<p>
+			<label for="email">Email</label>
+			<input type="email" name="email"/>
+		</p>
+		<p>
+			<label for="telefono">Teléfono</label>
+			<input type="text" name="telefono"/>
+		</p>
+		<p>
+			<label for="asunto">Asunto</label>
+			<select name="asunto">
+				<option>Oferta laboral en escuela</option>
+				<option>Pedido de clases particulares</option>
+				<option>Oferta laboral como monotributista</option>
+				<option>Otro</option>
+			</select>
+		</p>
+		<label for="horario">Contactar telefónicamente en el siguiente rango horario:</label>
+		<ul>
+			<li>
+				<input type="radio" name="horario">
+				<label for="horario">De 8 a 12hs</label>
+			</li>
+		</ul>
+				<ul>
+			<li>
+				<input type="radio" name="horario">
+				<label for="horario">De 13 a 17hs</label>
+			</li>
+		</ul>
+				<ul>
+			<li>
+				<input type="radio" name="horario">
+				<label for="horario">De 17 a 21hs</label>
+			</li>
+		</ul>
+		<label for="Cv">Encontró este Cv por...</label>
+		<p>
+			<label for="Cv">Linkedin</label>
+			<input type="checkbox" name="Cv" value="linkedin">
+		</p>
+		<p>
+			<label for="Cv">Indeed</label>
+			<input type="checkbox" name="Cv" value="Indeed">
+		</p>
+		<p>
+			<label for="Cv">Cv entregado en papel</label>
+			<input type="checkbox" name="Cv" value="papel">
+		</p>
+		<p>
+			<label for="mensaje"></label>
+			<textarea name="mensaje" placeholder="escriba su mensaje aquí"></textarea>
+		</p>
+		<p>
+			<input type="submit" value="Enviar"/>
+			<input type="reset" value="Borrar"/>
+		</p>
+	</form>
+</body>
+</html>
