@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Formulario de Contacto</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
 		</p>
 		<p>
 			<label for="telefono">Teléfono</label>
-			<input type="text" name="telefono"/>
+			<input type="number" name="telefono"/>
 		</p>
 		<p>
 			<label for="asunto">Asunto</label>
@@ -29,7 +30,7 @@
 				<option>Otro</option>
 			</select>
 		</p>
-		<label for="horario">Contactar telefónicamente en el siguiente rango horario:</label>
+		<label for="horario"><i><b>Contactar telefónicamente en el siguiente rango horario:</b></i></label>
 		<ul>
 			<li>
 				<input type="radio" name="horario">
@@ -48,7 +49,7 @@
 				<label for="horario">De 17 a 21hs</label>
 			</li>
 		</ul>
-		<label for="Cv">Encontró este Cv por...</label>
+		<label for="Cv"><u>Encontró este Cv por...</u></label>
 		<p>
 			<label for="Cv">Linkedin</label>
 			<input type="checkbox" name="Cv" value="linkedin">
@@ -66,7 +67,7 @@
 			<textarea name="mensaje" placeholder="escriba su mensaje aquí"></textarea>
 		</p>
 		<p>
-			<input type="submit" value="Enviar"/>
+			<input type="submit" value="Enviar" method="post"/>
 			<input type="reset" value="Borrar"/>
 		</p>
 	</form>
