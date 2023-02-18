@@ -3,14 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
 	<title>Formulario de Contacto</title>
 </head>
 <body>
-	<a href="index.html">Volver al Cv</a>
-	<p>Para contactarme, completar el siguiente formulario</p>
+	<header>
+		<h1>Analía Belén Leyez</h1>
+	</header>
+	<nav>
+		<p>Volver al Cv <a href="index.html">aquí</a></p>
+	</nav>
+	<div class="flex-container">
 	<form action="" method="">
+		<p>Para contactarme, completar el siguiente formulario</p>
 		<p>
-			</form><input type="text" name="nombre" placeholder="Nombre" />
+			<input type="text" name="nombre" placeholder="Nombre" />
 			<input type="text" name="apellido" placeholder="Apellido" />
 		</p>
 		<p>
@@ -64,12 +71,18 @@
 		</p>
 		<p>
 			<label for="mensaje"></label>
-			<textarea name="mensaje" placeholder="escriba su mensaje aquí"></textarea>
+			<textarea name="mensaje" placeholder="escriba su mensaje aquí" minlength="15" maxlength="100" required></textarea>
 		</p>
 		<p>
-			<input type="submit" value="Enviar" method="post"/>
-			<input type="reset" value="Borrar"/>
+			<div class="boton">
+			<input type="submit" value="Enviar"  method="post"/>
+			<input type="reset" value="Borrar" />
+			</div>
 		</p>
 	</form>
+	<div class="imgEmail">
+		<img src="https://th.bing.com/th/id/R.0ab00c5cb71db829c8c3549eb734372f?rik=IKxcuCWBQwhMyA&riu=http%3a%2f%2fwww.icone-png.com%2fpng%2f10%2f9719.png&ehk=POVbY22BJihBu6gvSe93ZsQdOvCr8tJbi2ZXxyaGy2Y%3d&risl=&pid=ImgRaw&r=0";>
+	</div>
+</div>
 </body>
 </html>
