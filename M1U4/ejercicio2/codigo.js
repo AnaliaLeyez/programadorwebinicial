@@ -12,6 +12,13 @@ const numeros =[num1, num2, num3, num4, num5, num6];
 // document.write("el valor máximo es " + Math.max(...numeros) );
 
 
+document.write ('los numeros son:'+ '<br>' );
+
+for( let i = 0; i < numeros.length; i++){
+	document.write(numeros[i] + '<br>')
+}
+
+
 let max = 0;
 
 for (let numero of numeros) {
