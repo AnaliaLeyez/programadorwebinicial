@@ -1,0 +1,34 @@
+.casillero{
+    height: max-content;
+}
+.casillero-1{
+    background-color: aqua;
+}
+
+.casillero-2{
+    background-color: bisque;
+}
+
+.carousel {
+    width: 30vw;
+    margin:auto;
+}
+
+img.carousel{
+    object-fit: cover;
+}
+
+.grid .row{
+    height: 250px;
+    gap: 0;
+}
+
+.img-grilla {
+    object-fit: cover;
+    height:250px;
+    width: 100%;
+}
+
+div.col {
+    padding: 0;
+}

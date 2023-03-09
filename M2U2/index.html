@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Analía Leyez">
+  <link href="estilo.css" rel="stylesheet">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Analía Leyez practica de Bootstrap</title>
+</head>
+
+<body>
+  <!--Barra navegacion-->
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <a class="navbar-brand" href="#"><img src="icon.png" width="50" alt="Logo de la página"></a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Proyectos
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="#">HTML</a></li>
+                <li><a class="dropdown-item" href="#">CSS</a></li>
+                <li><a class="dropdown-item" href="#">javaScript</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contacto
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item"><a href="#">any15015@gmail.com</a></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.facebook.com/analialeyez">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="https://www.linkedin.com/in/analia-leyez/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-linkedin" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="https://www.instagram.com/analialeyez/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false" data-bs-auto-close="outside">
+                Log in
+              </button>
+              <form class="dropdown-menu p-4">
+                <div class="mb-3">
+                  <label for="exampleDropdownFormEmail2" class="form-label">Usuario</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                    placeholder="email@example.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleDropdownFormPassword2" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password" required>
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                    <label class="form-check-label" for="dropdownCheck2">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary position-relative">
+              Inbox
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                5
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Tabla Bootstrap-->
+  <table class="table table-primary table-striped table-hover .table-responsive">
+    <thead>
+      <tr class="table-success">
+        <th scope="col">Estudiante</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col" class="table-dark">Edad</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider table-bordered border-info-subtle">
+      <tr>
+        <th scope="row"> 1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>Jackson</td>
+        <td>18</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--Grilla Bootstrap-->
+  <div class="grid container container-fluid container-md container-sm container-lg">
+    <div class="row">
+      <div class="col col-3">
+        <img class="img-grilla"
+          src="https://media.istockphoto.com/id/1397514526/photo/spa-concept-for-product-display-montage-with-white-stone-pedestal.jpg?s=612x612&w=is&k=20&c=4Ia9NW1Yo3goMzLihi34hAaR7kMPNmldvznMc1DSjAA=">
+      </div>
+      <div class="col col-6">
+        <img class="img-grilla" src="https://wallpapercave.com/wp/E7hlJ3j.jpg">
+      </div>
+      <div class="col col-3">
+        <img class="img-grilla"
+          src="https://th.bing.com/th/id/R.cf86284a764a71624e74a9ef95e41d68?rik=c4z5VyHLec5jQA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f10%2fWallpapers-Canada-HD.jpg&ehk=evJtEJ7d4YJiitR%2fH%2b8yYzCh0kayly%2f36OoNA6KMuWI%3d&risl=1&pid=ImgRaw&r=0">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-8">
+        <img class="img-grilla" src="https://cdn.pixabay.com/photo/2017/08/25/18/48/watercolor-2681039_1280.jpg">
+      </div>
+      <div class="col col-4">
+        <img class="img-grilla" src="https://cdn.pixabay.com/photo/2019/04/06/06/44/astronaut-4106766_1280.jpg">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-4">
+        <img class="img-grilla"
+          src="https://th.bing.com/th/id/R.955f96480f3c735b3ebea88c489da352?rik=H5phdh6z7tVvSQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f3%2fd%2f3%2f1193570-vivid-wallpaper-1920x1080-for-phone.jpg&ehk=1iN3FIzhCObZLYDBqvVAZ%2betIAfO47SN%2bxmQDwwisc0%3d&risl=&pid=ImgRaw&r=0">
+      </div>
+      <div class="col col-4">
+        <img class="img-grilla" src="https://cdn.pixabay.com/photo/2016/07/02/12/21/eclipse-1492818_1280.jpg">
+      </div>
+      <div class="col col-4">
+        <img class="img-grilla" src="https://wallpapercave.com/wp/wp2895348.jpg">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-7 col-md-4 casillero casillero-1">Este es más largo en pantallas hasta 769px</div>
+      <div class="col col-5 col-md-8 casillero casillero-2">Este es más largo en pantallas grandes</div>
+    </div>
+  </div><br><br>
+
+  <!--Acordeón-->
+  <h3>Sección acordeón</h3>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Historia de nuestra compañia.
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, vitae voluptatibus
+          nisi reprehenderit molestias officia, labore odit sunt velit blanditiis animi cupiditate voluptatem
+          praesentium voluptatum distinctio? Dolorum deserunt qui esse.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Nuestra misión
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum saepe
+          obcaecati odio, sequi cumque hic illo velit possimus maiores dolore ex accusantium tenetur adipisci beatae
+          similique mollitia fugiat quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi,
+          laudantium! Minus dolores architecto soluta cupiditate quia adipisci cum alias officia autem iure eveniet
+          repudiandae, necessitatibus, odit quis tempore veniam rerum. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Tenetur ipsum dicta similique, facere eum consectetur ex, culpa quas hic sequi ullam,
+          deleniti totam ratione. Molestias dolor corporis praesentium pariatur nihil!</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Proyectos
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta id voluptas eum
+          est, alias tempore quod at non deleniti consequuntur excepturi nobis provident voluptatum? Exercitationem
+          corrupti molestias commodi ex molestiae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+          eligendi corrupti debitis totam iure dolores libero aut aperiam placeat maxime quae illo unde saepe nihil, ea
+          exercitationem maiores omnis quaerat.</div>
+      </div>
+    </div>
+  </div>
+<hr>
+
+  <!--Carousel y Tarjetas-->
+  <h5>Armado de tarjetas dentro de Carousel:</h5>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-group">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.paulinacocina.net/wp-content/uploads/2018/09/menu-semanal.png" class="card-img-top"
+                alt="diversidad de platos">
+              <div class="card-body">
+                <h5 class="card-title">Menú para una semana con #MealPrep</h5>
+                <p class="card-text">En sólo unas horas preparás todo un menú para una semana entera y super saludable
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">nivel de dificultad: medio</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card-group">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.paulinacocina.net/wp-content/uploads/2018/04/mealprep-pollo2.png"
+                class="card-img-top" alt="platos con pollo">
+              <div class="card-body">
+                <h5 class="card-title">5 recetas con pollo</h5>
+                <p class="card-text">5 comidas con pollo super variadas y riquísimas para tener listas</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">nivel de dificultad: bajo</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card-group">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.paulinacocina.net/wp-content/uploads/2022/05/ensalada-de-lentejas-receta.jpg"
+                class="card-img-top" alt="Ensalada de lentejas">
+              <div class="card-body">
+                <h5 class="card-title">Ensalada de lentejas fría</h5>
+                <p class="card-text">La receta de hoy tiene como base una legumbre que no solo es riquísima, también
+                  aporta muchos beneficios a nuestra salud. Si señores, hoy preparamos una Ensalada de Lentejas.
+                  Especial para cualquier momento de la vida que tengamos ganas de comer algo sano, rico y rápido!</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">nivel de dificultad: bajo</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card-group">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.paulinacocina.net/wp-content/uploads/2018/12/brownie.png" class="card-img-top"
+                alt="brownie">
+              <div class="card-body">
+                <h5 class="card-title">Brownie de chocolate con nueces</h5>
+                <p class="card-text">Receta de brownie de chocolate con nueces explicada paso a paso y en video! Aprende
+                  como hacer brownies y la clave para que queden perfectos, húmedos y chocolatosos!</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">nivel de dificultad: medio</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--formulario Bootstrap-->
+  <h1>Formulario</h1>
+  <p><i>(Aplicación de algunas herramientas preconfiguradas en Bootstrap)</i></p><br>
+
+  <h3>El siguiente es un ejemplo de Datalist</h3>
+  <label for="exampleDataList" class="form-label">Sede de cursada</label>
+  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Click para ver opciones...">
+  <datalist id="datalistOptions">
+    <option value="Buenos Aires">
+    <option value="Salta">
+    <option value="Santa Fe">
+    <option value="Córdoba">
+    <option value="Mendoza">
+    <option value="Río Negro">
+  </datalist>
+
+  <h3>El siguiente permite elegir un color</h3>
+  <label for="exampleColorInput" class="form-label">Elija un color para su perfil</label>
+  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+    title="Choose your color">
+
+  <h3>El siguiente permite cargar archivos</h3>
+  <div class="mb-3">
+    <label for="formFileMultiple" class="form-label">Seleccione los archivos a cargar</label>
+    <input class="form-control" type="file" id="formFileMultiple" multiple>
+  </div>
+
+  <hr>
+
+  <!--Formulario de validacion-->
+  <form class="row g-3">
+    <div class="col-md-4">
+      <label for="validationServer01" class="form-label">Nombre y apellido</label>
+      <input type="text" class="form-control" id="validationServer01" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationServerUsername" class="form-label">Usuario</label>
+      <input type="text" class="form-control is-valid" id="validationServerUsername" required>
+      <div class="valid-feedback">
+        Nombre de Usuario disponible!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationServer02" class="form-label">Email</label>
+      <div class="input-group has-validation">
+        <input type="text" class="form-control" id="validationServer02"
+          aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+          Coloque su Email.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationServer03" class="form-label">Ciudad</label>
+      <input type="text" class="form-control is-invalid" id="validationServer03"
+        aria-describedby="validationServer03Feedback" required>
+      <div id="validationServer03Feedback" class="invalid-feedback">
+        Ingrese una ciudad válida (solo de Argentina)
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationServer05" class="form-label">Código Postal</label>
+      <input type="text" class="form-control is-invalid" id="validationServer05"
+        aria-describedby="validationServer05Feedback" required>
+      <div id="validationServer05Feedback" class="invalid-feedback">
+        Revise que su C.p. esté correcto.
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+          aria-describedby="invalidCheck3Feedback" required>
+        <label class="form-check-label" for="invalidCheck3">
+          Acepto Términos y condiciones
+        </label>
+        <div id="invalidCheck3Feedback" class="invalid-feedback">
+          Debe aceptar términos y condiciones antes de finalizar.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+  </form>
+
+  <hr>
+
+  <!--Switches-->
+  <h3>Ejemplo de switch</h3>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Desea recibir anuncios semanales</label>
+  </div>
+
+
+  <!--alerta-->
+  <div id="liveAlertPlaceholder" class="alert alert-warning" role="alert">
+    Esto es un alerta de advertencia!</div>
+  <button type="button" class="btn btn-secondary" id="liveAlertBtn">Mostrar alerta</button>
+
+
+  <script src="codigo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
