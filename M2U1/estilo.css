@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    grid-template: 100px / repeat(3, 100px);
+    width: 100%;
+    column-gap: 1px;
+}
+
+.item {
+    border: 2px solid black;
+}
+
+#rojo {
+    background-color: red;
+}
+
+#verde {
+    background-color: green;
+}
+
+#azul {
+    background-color: blue;
+}
